@@ -83,7 +83,7 @@ public class UserManagementServiceImpl implements UserManagementService {
 		UserAccountEntity savedEntity = userAccRepo.save(entity);
 
 		if (savedEntity.getUserId() != null) {
-			return emailUtils.sendUserAccUnlockEmail01(userAcc);
+			return emailUtils.sendUserAccUnlockEmail(userAcc);
 		}
 		return false;
 	}
@@ -111,5 +111,11 @@ public class UserManagementServiceImpl implements UserManagementService {
 		BeanUtils.copyProperties(userAcc, entity);
 		UserAccountEntity savedEntity = userAccRepo.save(entity);
 		return savedEntity != null;
+	}
+
+	@Override
+	public boolean isExistEmail(String email) {
+		UserAccountEntity entity = userAccRepo.findByUserEmail(email);
+		return entity != null;
 	}
 }

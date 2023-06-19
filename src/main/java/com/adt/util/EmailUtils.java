@@ -27,7 +27,7 @@ public class EmailUtils {
 			msg.setTo(userAcc.getUserEmail());
 			msg.setSubject("Registration Email");
 			msg.setText(getUnlockAccEmailBody(userAcc));
-//			mailSender.send(msg);
+			mailSender.send(msg);
 			isSent=true;
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -43,7 +43,7 @@ public class EmailUtils {
 			helper.setTo(usserAcc.getUserEmail());
 			helper.setSubject("Unlock your Account");
 			helper.setText(getUnlockAccEmailBody(usserAcc),true);
-//			mailSender.send(mimeMsg);
+			mailSender.send(mimeMsg);
 			isSent = true;
 		}catch(Exception e) {
 			e.printStackTrace();

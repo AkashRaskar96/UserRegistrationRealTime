@@ -19,5 +19,7 @@ public interface UserManagementService {
 	public UserAccount getUserAccntByTempPwdAndEmail(String tempPwd, String email);
 
 	public boolean updateUserAccount(UserAccount userAcc);
+	
+	public boolean isExistEmail(String email);
 
 }

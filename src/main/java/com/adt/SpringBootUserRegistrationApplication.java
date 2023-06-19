@@ -14,9 +14,9 @@ public class SpringBootUserRegistrationApplication {
 		SpringApplication.run(SpringBootUserRegistrationApplication.class, args);
 		
 	}
-	@Bean
-	public JavaMailSender getjavaMailSender() {
-		return new JavaMailSenderImpl();
-	}
+//	@Bean
+//	public JavaMailSender getjavaMailSender() {
+//		return new JavaMailSenderImpl();
+//	}
 
 }

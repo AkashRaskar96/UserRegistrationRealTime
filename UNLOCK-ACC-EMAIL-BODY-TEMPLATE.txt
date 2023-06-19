@@ -1,4 +1,4 @@
-Hi {FIRST}, {LNAME} :
+Hi {FNAME}, {LNAME} :
 <br/>
 
 Welcome to Rackshas family, Your registration is almost completed. Please use below details to unlock Account.

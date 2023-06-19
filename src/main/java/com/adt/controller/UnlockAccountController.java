@@ -32,6 +32,7 @@ public class UnlockAccountController {
 			userAccnt.setUserPazzword(acc.getNewPwd());
 			boolean isUpdated = userMgmtService.updateUserAccount(userAccnt);
 			if (isUpdated) {
+				logger.info("");
 				return "Unlock Account Successfully..!";
 			}
 		}
